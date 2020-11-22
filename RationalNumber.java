@@ -28,4 +28,8 @@ public class RationalNumber extends RealNumber
   {
     return numerator;
   }
+  public int getDenominator()
+  {
+    return denominator;
+  }
 }

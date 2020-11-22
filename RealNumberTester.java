@@ -42,5 +42,10 @@ public class RealNumberTester
     System.out.println(y.getNumerator() + " should be -5");
     System.out.println(x.getNumerator() + " should be 5");
     System.out.println(z.getNumerator() + " should be 0");
+
+    System.out.println(y.getDenominator() + " should be 2");
+    System.out.println(x.getDenominator() + " should be 2");
+    System.out.println(z.getDenominator() + " should be 1");
+
   }
 }
