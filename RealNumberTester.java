@@ -22,5 +22,8 @@ public class RealNumberTester
 
     System.out.println(f.divide(e) + " should be around 20.000075");
     System.out.println(c.divide(a) + " should be around 1.0249999375");
+
+    System.out.println(c.subtract(a) + " should be around 1.0000");
+    System.out.println(f.subtract(e) + " should be around 1520.01170002");
   }
 }

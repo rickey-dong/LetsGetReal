@@ -42,4 +42,10 @@ public class RealNumber
     RealNumber result = new RealNumber(quotient);
     return result;
   }
+  public RealNumber subtract(RealNumber other)
+  {
+    double difference = value - other.getValue();
+    RealNumber result = new RealNumber(difference);
+    return result;
+  }
 }
