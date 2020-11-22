@@ -5,5 +5,12 @@ public class RealNumber
   {
     value = v;
   }
-  
+  public double getValue()
+  {
+    return value;
+  }
+  public String toString()
+  {
+    return "" + getValue();
+  }
 }
