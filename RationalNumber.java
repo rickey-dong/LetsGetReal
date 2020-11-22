@@ -19,6 +19,7 @@ public class RationalNumber extends RealNumber
       numerator = nume;
       denominator = deno;
     }
+    reduce();
   }
   public double getValue()
   {
@@ -51,13 +52,13 @@ public class RationalNumber extends RealNumber
   {
     int factor = 1;
     int minimum = 0;
-    if (a < b)
+    if (Math.abs(a) < Math.abs(b))
     {
-      minimum = a;
+      minimum = Math.abs(a);
     }
     else
     {
-      minimum = b;
+      minimum = Math.abs(b);
     }
     for (int i = 2; i <= minimum; i++)
     {
@@ -67,5 +68,11 @@ public class RationalNumber extends RealNumber
       }
     }
     return factor;
+  }
+  private void reduce()
+  {
+    int gcf = gcd(numerator, denominator);
+    numerator = numerator / gcf;
+    denominator = denominator / gcf;
   }
 }

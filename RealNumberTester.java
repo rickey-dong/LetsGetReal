@@ -31,6 +31,7 @@ public class RealNumberTester
     RationalNumber z = new RationalNumber(5,0);
     RationalNumber y = new RationalNumber(5,-2);
     RationalNumber x = new RationalNumber(5,2);
+    RationalNumber w = new RationalNumber(-5,-2);
 
     RealNumber x1 = new RealNumber(2.5);
 
@@ -66,10 +67,18 @@ public class RealNumberTester
     System.out.println(X + " should be 2/5");
     System.out.println(Y + " should be -2/5");
     System.out.println(Z + " should be 0/1");
+    System.out.println(w + " should be 5/2");
 
     //System.out.println(RationalNumber.gcd(10,15) + " should be 5");
     //System.out.println(RationalNumber.gcd(3,7) + " should be 1");
     //System.out.println(RationalNumber.gcd(24,12) + " should be 12");
     //System.out.println(RationalNumber.gcd(40,40) + " should be 40");
+    RationalNumber h = new RationalNumber(5,10);
+    RationalNumber j = new RationalNumber(-5,10);
+    RationalNumber k = new RationalNumber(-5,-10);
+    System.out.println(h + " should be 1/2");
+    System.out.println(j + " should be -1/2");
+    System.out.println(k + " should be 1/2");
+    System.out.println(x + " should be 5/2");
   }
 }
