@@ -24,4 +24,10 @@ public class RealNumber
       return ((Math.abs(value - other.getValue()) / value) < 0.00001);
     }
   }
+  public RealNumber add(RealNumber other)
+  {
+    double sum = value + other.getValue();
+    RealNumber result = new RealNumber(sum);
+    return result;
+  }
 }
