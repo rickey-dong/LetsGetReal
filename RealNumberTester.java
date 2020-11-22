@@ -80,5 +80,13 @@ public class RealNumberTester
     System.out.println(j + " should be -1/2");
     System.out.println(k + " should be 1/2");
     System.out.println(x + " should be 5/2");
+
+    RationalNumber m = new RationalNumber(3,4);
+    RationalNumber n = new RationalNumber(4,5);
+    RationalNumber p = new RationalNumber(-3,2);
+
+    System.out.println(m.multiply(n) + " should be 3/5");
+    System.out.println(n.multiply(p) + " should be -6/5");
+    System.out.println(m.multiply(p) + " should be -9/8");
   }
 }
