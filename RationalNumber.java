@@ -47,4 +47,25 @@ public class RationalNumber extends RealNumber
   {
     return ("" + numerator + "/" + denominator);
   }
+  private static int gcd(int a, int b)
+  {
+    int factor = 1;
+    int minimum = 0;
+    if (a < b)
+    {
+      minimum = a;
+    }
+    else
+    {
+      minimum = b;
+    }
+    for (int i = 2; i <= minimum; i++)
+    {
+      if ( (a % i == 0) && (b % i == 0) )
+      {
+        factor = i;
+      }
+    }
+    return factor;
+  }
 }
