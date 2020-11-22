@@ -82,4 +82,11 @@ public class RationalNumber extends RealNumber
     RationalNumber product = new RationalNumber(productNumer, productDenom);
     return product;
   }
+  public RationalNumber divide(RationalNumber other)
+  {
+    int productNumer = numerator * other.reciprocal().getNumerator();
+    int productDenom = denominator * other.reciprocal().getDenominator();
+    RationalNumber quotient = new RationalNumber(productNumer, productDenom);
+    return quotient;
+  }
 }

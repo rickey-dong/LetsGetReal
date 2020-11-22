@@ -88,5 +88,9 @@ public class RealNumberTester
     System.out.println(m.multiply(n) + " should be 3/5");
     System.out.println(n.multiply(p) + " should be -6/5");
     System.out.println(m.multiply(p) + " should be -9/8");
+
+    System.out.println(m.divide(n) + " should be 15/16");
+    System.out.println(n.divide(p) + " should be -8/15");
+    System.out.println(m.divide(p) + " should be -1/2");
   }
 }
