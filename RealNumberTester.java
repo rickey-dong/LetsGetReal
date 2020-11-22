@@ -59,5 +59,12 @@ public class RealNumberTester
 
     System.out.println(x.equals(y) + " should be false");
     System.out.println(Z.equals(z) + " should be true");
+
+    System.out.println(x + " should be 5/2");
+    System.out.println(y + " should be -5/2");
+    System.out.println(z + " should be 0/1");
+    System.out.println(X + " should be 2/5");
+    System.out.println(Y + " should be -2/5");
+    System.out.println(Z + " should be 0/1");
   }
 }
