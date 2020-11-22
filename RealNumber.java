@@ -36,4 +36,10 @@ public class RealNumber
     RealNumber result = new RealNumber(product);
     return result;
   }
+  public RealNumber divide(RealNumber other)
+  {
+    double quotient = value / other.getValue();
+    RealNumber result = new RealNumber(quotient);
+    return result;
+  }
 }
