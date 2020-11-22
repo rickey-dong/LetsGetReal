@@ -32,4 +32,11 @@ public class RationalNumber extends RealNumber
   {
     return denominator;
   }
+  public RationalNumber reciprocal()
+  {
+    int flippedNumer = denominator;
+    int flippedDenom = numerator;
+    RationalNumber flipped = new RationalNumber(flippedNumer, flippedDenom);
+    return flipped; 
+  }
 }

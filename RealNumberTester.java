@@ -47,5 +47,14 @@ public class RealNumberTester
     System.out.println(x.getDenominator() + " should be 2");
     System.out.println(z.getDenominator() + " should be 1");
 
+    RationalNumber Z = z.reciprocal();
+    RationalNumber Y = y.reciprocal();
+    RationalNumber X = x.reciprocal();
+    System.out.println(Z.getNumerator() + " should be 0");
+    System.out.println(Z.getDenominator() + " should be 1");
+    System.out.println(Y.getNumerator() + " should be -2");
+    System.out.println(Y.getDenominator() + " should be 5");
+    System.out.println(X.getNumerator() + " should be 2");
+    System.out.println(X.getDenominator() + " should be 5");
   }
 }
