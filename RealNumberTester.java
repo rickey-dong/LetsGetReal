@@ -96,5 +96,9 @@ public class RealNumberTester
     System.out.println(m.add(n) + " should be 31/20");
     System.out.println(n.add(p) + " should be -7/10");
     System.out.println(m.add(p) + " should be -3/4");
+
+    System.out.println(m.subtract(n) + " should be -1/20");
+    System.out.println(n.subtract(p) + " should be 23/10");
+    System.out.println(m.subtract(p) + " should be 9/4");
   }
 }

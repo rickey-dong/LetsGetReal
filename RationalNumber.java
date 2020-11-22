@@ -99,4 +99,14 @@ public class RationalNumber extends RealNumber
     RationalNumber sum = new RationalNumber(newFirstNumer + newSecondNumer, LCD);
     return sum;
   }
+  public RationalNumber subtract(RationalNumber other)
+  {
+    int LCD = denominator * other.getDenominator();
+    int firstFractionScale = LCD / denominator;
+    int secondFractionScale = LCD / other.getDenominator();
+    int newFirstNumer = numerator * firstFractionScale;
+    int newSecondNumer = other.getNumerator() * secondFractionScale;
+    RationalNumber difference = new RationalNumber(newFirstNumer - newSecondNumer, LCD);
+    return difference;
+  }
 }
