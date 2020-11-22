@@ -38,5 +38,9 @@ public class RealNumberTester
     System.out.println(y.getValue() + " should be -2.5");
     System.out.println(x.getValue() + " should be 2.5");
     System.out.println(x1.equals(x) + " should be true");
+
+    System.out.println(y.getNumerator() + " should be -5");
+    System.out.println(x.getNumerator() + " should be 5");
+    System.out.println(z.getNumerator() + " should be 0");
   }
 }

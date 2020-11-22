@@ -24,4 +24,8 @@ public class RationalNumber extends RealNumber
   {
     return (double) numerator / denominator;
   }
+  public int getNumerator()
+  {
+    return numerator;
+  }
 }
