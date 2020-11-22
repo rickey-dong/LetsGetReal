@@ -15,5 +15,9 @@ public class RealNumberTester
     System.out.println(a.add(b) + " should be around 80.0003");
     System.out.println(b.add(c) + " should be around 81.0003");
     System.out.println(d.equals(e) + " should be true");
+
+    System.out.println(a.multiply(b) + " should be around 1600.01200002");
+    RealNumber f = new RealNumber(1600.01200002);
+    System.out.println(a.multiply(b).equals(f) + " should be true");
   }
 }

@@ -30,4 +30,10 @@ public class RealNumber
     RealNumber result = new RealNumber(sum);
     return result;
   }
+  public RealNumber multiply(RealNumber other)
+  {
+    double product = value * other.getValue();
+    RealNumber result = new RealNumber(product);
+    return result;
+  }
 }
