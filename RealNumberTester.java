@@ -25,5 +25,18 @@ public class RealNumberTester
 
     System.out.println(c.subtract(a) + " should be around 1.0000");
     System.out.println(f.subtract(e) + " should be around 1520.01170002");
+
+    System.out.println("============Rational Number Testing============");
+
+    RationalNumber z = new RationalNumber(5,0);
+    RationalNumber y = new RationalNumber(5,-2);
+    RationalNumber x = new RationalNumber(5,2);
+
+    RealNumber x1 = new RealNumber(2.5);
+
+    System.out.println(z.getValue() + " should be 0.0");
+    System.out.println(y.getValue() + " should be -2.5");
+    System.out.println(x.getValue() + " should be 2.5");
+    System.out.println(x1.equals(x) + " should be true");
   }
 }
