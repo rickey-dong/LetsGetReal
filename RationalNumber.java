@@ -37,6 +37,10 @@ public class RationalNumber extends RealNumber
     int flippedNumer = denominator;
     int flippedDenom = numerator;
     RationalNumber flipped = new RationalNumber(flippedNumer, flippedDenom);
-    return flipped; 
+    return flipped;
+  }
+  public boolean equals(RationalNumber other)
+  {
+    return ( numerator == other.getNumerator() && denominator == other.getDenominator() );
   }
 }

@@ -56,5 +56,8 @@ public class RealNumberTester
     System.out.println(Y.getDenominator() + " should be 5");
     System.out.println(X.getNumerator() + " should be 2");
     System.out.println(X.getDenominator() + " should be 5");
+
+    System.out.println(x.equals(y) + " should be false");
+    System.out.println(Z.equals(z) + " should be true");
   }
 }
