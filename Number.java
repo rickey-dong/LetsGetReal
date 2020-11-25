@@ -12,4 +12,19 @@ public abstract class Number
       return ((Math.abs(getValue() - other.getValue()) / getValue()) < 0.00001);
     }
   }
+  public int compareTo(Number other)
+  {
+    if (this.equals(other))
+    {
+      return 0;
+    }
+    else if (getValue() < other.getValue())
+    {
+      return -1;
+    }
+    else
+    {
+      return 1;
+    }
+  }
 }
