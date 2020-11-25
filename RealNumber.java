@@ -13,17 +13,6 @@ public class RealNumber extends Number
   {
     return "" + getValue();
   }
-  public boolean equals(RealNumber other)
-  {
-    if (value == 0.0)
-    {
-      return (other.getValue() == 0.0);
-    }
-    else
-    {
-      return ((Math.abs(value - other.getValue()) / value) < 0.00001);
-    }
-  }
   public RealNumber add(RealNumber other)
   {
     double sum = value + other.getValue();
