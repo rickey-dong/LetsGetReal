@@ -63,10 +63,10 @@ public class RealNumberTester
 
     System.out.println(x + " should be 5/2");
     System.out.println(y + " should be -5/2");
-    System.out.println(z + " should be 0/1");
+    System.out.println(z + " should be 0");
     System.out.println(X + " should be 2/5");
     System.out.println(Y + " should be -2/5");
-    System.out.println(Z + " should be 0/1");
+    System.out.println(Z + " should be 0");
     System.out.println(w + " should be 5/2");
 
     //System.out.println(RationalNumber.gcd(10,15) + " should be 5");
